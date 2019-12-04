@@ -1,0 +1,16 @@
+#main-info {
+    background: blue;
+    margin: 10px;
+    padding: 10;
+    width: 330px;
+    /* position: relative; */
+    height: 96%;
+    overflow: auto;
+    float: left; 
+}
+
+#game-container {
+    /* position: relative; */
+    float: left;
+}
+
