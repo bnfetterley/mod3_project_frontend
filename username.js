@@ -1,20 +1,18 @@
-let usernameContainer = document.querySelector("#username-container")
-let usernameForm = document.createElement("form")
-    usernameForm.className = "add-username"
+//Grab and render top scores for each level 
+let rankingContainer = document.querySelector("#ranking-container")
+let rankingsOl = document.createElement("ol")
+let rankingLi = document.createElement("li")
+rankingContainer.append(rankingsOl)
+rankingsOl.append(rankingLi)
 
-let usernameFormInput1 = document.createElement("input")
-    usernameFormInput1.name = "username"
-    usernameFormInput1.placeholder = "Enter your name here..."
+var scoresArr = []
 
-let usernameFormInput2 = document.createElement("input")
-    usernameFormInput2.type = "submit"
-    usernameFormInput2.name = "submit"
-    usernameFormInput2.value = "Start"
-    usernameFormInput2.className = "submit"
-
-usernameForm.append(usernameFormInput1, usernameFormInput2)
-usernameContainer.append(usernameForm)
-
-usernameForm.addEventListener("submit", (evt) => {
-    console.log(evt.target)
+fetch('http://localhost:3000/scores/')
+.then(r => r.json())
+.then((scoresObj) => {
+    scoresObj.forEach((scores) => {
+        //halp pls
+        scoresArr.push(scores.value)
+        console.log(scoresArr)
+    })
 })
