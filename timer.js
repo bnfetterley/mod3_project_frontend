@@ -2,7 +2,7 @@ let timerContainer = document.querySelector("#timer-container")
 var timer = document.createElement("span");
 timerContainer.append(timer)
 
-let totalSeconds = 30;
+let totalSeconds = 15;
 let interval;
 
 function setTime() {
@@ -20,7 +20,7 @@ function stopTimer(){
 
 function resetTimer(){
     clearInterval(interval);
-    totalSeconds = 30;
+    totalSeconds = 15;
     timer.innerHTML = `${totalSeconds} Seconds Left`
 }
     

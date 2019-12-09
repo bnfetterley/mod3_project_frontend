@@ -213,7 +213,7 @@ function gameCanvas(speed){
 
             friends = [hope, nabeel, muna, vannida, eric, nabeel2,hope, nabeel, muna, vannida, eric, nabeel2, stephen,stephen2, bri, alina, alex, aniece, annie, diego, gene, jon, keenan, carlie, nic, solomon, theresa, yuriy, raq, ruben, hami, nicky,
 
-                hope2, nabeel3, muna2, vannida2, eric2, nabeel4, hope2, nabeel, muna2, vannida2, eric2, nabeel2, stephen3, stephen4, bri2, alina2, aniece2, annie2, diego2, gene2, jon2, keenan2, carlie2, nic2, solomon2, theresa2, yuriy2, raq2, ruben2, hami2, nicky2
+                hope2, nabeel3, muna2, vannida2, eric2, nabeel4, hope2, nabeel, muna2, vannida2, eric2, nabeel2, stephen3, stephen4, bri2, alina2, aniece2, annie2, diego2, gene2, jon2, keenan2, carlie2, nic2, solomon2, theresa2, yuriy2, raq2, ruben2, hami2, nicky2, alex3, alex3, stephen5, stephen6, nabeel5
 
                 // hope3, nabeel5, muna3, vannida3, eric3, nabeel6, hope3, nabeel, muna3, vannida3, eric3, nabeel3, stephen5, stephen6,bri3, alina3, alex3, aniece3, annie3, diego3, gene3, jon3, keenan3, carlie3, nic3, solomon3, theresa3, yuriy3, raq3, ruben3, hami3, nicky3
             
@@ -284,7 +284,7 @@ function setUpButtons(){
                     stopTimer()
                     resetTimer()
                     scoreContainer.innerText = ""
-                }, 30_000)
+                }, 15_000)
             })  
 
         })
